@@ -10,6 +10,14 @@ module ApplicationHelper
     end
   end
 
+  def text_title
+    if params[:genre] == "php"
+      "PHP テキスト教材"
+    else
+      "Ruby/Rails テキスト教材"
+    end
+  end
+
   def movie_title
     if params[:genre] == "php"
       "PHP"
